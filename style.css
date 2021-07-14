@@ -34,13 +34,13 @@ a:hover{
 /* head section */
 
 nav {
+    width: 80%;
     margin-bottom: 49px;
 }
 .menu {
     display: flex;
     flex-direction: row;
     justify-content: space-between ;
-    width: 1050px;
     align-items: center;
 }
 
@@ -125,6 +125,8 @@ header{
    font-size: 16px;
     margin-top: 0;
 }
+
+
 /* matches */
 .fixtures {
     display: flex;
@@ -189,7 +191,6 @@ td {
     font-size: 2.5em;
     color: rgb(221, 61, 33);
 } 
-
 
 
 /* highlights */
@@ -278,6 +279,10 @@ td {
     margin-top: 50px;
 }
 /* header section  */
+
+nav {
+    width: 90%;
+}
     .header {
         padding:10px;
     }
@@ -309,11 +314,120 @@ td {
 
     .player-cards, .transfer-cards{
         margin: 0;
-        margin-left: 10%;
+        margin-left: 5%;
         width: 90%;
         grid-template-columns: repeat(1, 1fr);
         grid-row-gap: 24px;
+    }
+/* matches */
+
+.upcoming-matches{
+    width: 90%;
 }
+
+table td {
+    text-align: center;
+    justify-content: center;
+    height: 60px;
+}
+/* transfers  */
+
+.transfers {
+    width: 100%;
+    margin: 0;
+}
+
+/* highlights */
+
+.highlights{
+    margin-top: 60px;
+}
+
+.highlights-title {
+    width: 90%;
+    margin: 0 5%;
+    padding: 0;
+}
+
+.klopp {
+    border-radius: 10px;
+}
+
+}
+
+@media only screen and (min-width:689px) and (max-width:768px){
+   /* header section  */
+nav{
+    width: 90%;
+}
+
+   .header {
+    padding:10px;
+}
+.menu {
+    width: 100%;
+}
+
+.menu-items{
+    display: none;
+}
+
+.menu-bars{
+   display: block;
+}
+.top-banner, .highlights {
+    width: 100%;
+}
+.title h1 {
+    font-size: 36px;
+}
+
+.half img {
+    width: 100%;
+    margin-top: 50px;
+}
+
+
+  /* players  */
+  .players {
+    width: 100%;
+  margin-top: 47px;
+}
+
+.player-cards, .transfer-cards{
+    margin: 0;
+    width: 90%;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 24px;
+}
+
+
+/* transfers  */
+.transfers {
+    margin:  40px 0;
+}
+
+/* highlights */
+
+.highlights{
+    margin-top: 60px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.highlights-title {
+    width: 90%;
+    margin: 0 5%;
+    padding: 0;
+}
+
+.klopp {
+    border-radius: 10px;
+}
+
+
+
+
 }
 
 
