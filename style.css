@@ -14,12 +14,21 @@ a {
     letter-spacing: 1px;
     color: white;
     padding: 10px 24px;
+    transition: .4s;
+}
+
+a:hover{
+    background-color: crimson;
 }
 
 .container {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.half{
+    width: 50%;
 }
 
 /* head section */
@@ -42,6 +51,10 @@ nav {
     
 }
 
+.menu-bars{
+    display: none;
+}
+
 .menu ul li {
     list-style: none;
     color: white;
@@ -59,8 +72,13 @@ header{
 }
 
 
-.half{
-    width: 50%;
+.title-img, .klopp {
+    transition: 1s;
+}
+
+.title-img:hover, .klopp:hover {
+    transform: rotateY(45deg);
+
 }
 
 .title h1{
@@ -77,15 +95,17 @@ header{
 .players{
         padding-top: 70px;
 }
-.player-cards {
+.player-cards, .transfer-cards {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-column-gap: 30px;
-    grid-row-gap: 45px;
-    width: 1050px;
+   width: 1050px;
 }
 
-.cards {
+.player-cards{
+    grid-row-gap: 45px;
+}
+.cards, .transfer-card  {
     width: 300px;
     padding: 15px;
     background-color: white;
@@ -96,6 +116,81 @@ header{
     height: 256px;
     width: 300px;
 }
+
+.cards h3 {
+    font-size: 28px;
+    margin: 10px 0;
+}
+.cards p {
+   font-size: 16px;
+    margin-top: 0;
+}
+/* matches */
+.fixtures {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+.upcoming-matches{
+    width: 50%;
+}
+
+.match-heading {
+    text-align: center;
+}
+
+
+table {
+    width: 100%;
+    text-align: center;
+    font-size: 20px;   
+}
+
+table td {
+    border: 1px solid grey;
+    border-collapse: collapse;
+}
+
+tr:hover {
+    background-color: rgba(128, 128, 128, 0.137);
+}
+th{
+    padding: 20px;
+    color:rgb(49, 84, 85);
+}
+
+tr {
+    display: grid;
+    grid-template-columns: 3fr 1fr 3fr;
+}
+
+td {
+    padding: 10px;
+}
+
+
+/* transfer  */
+
+.transfers{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 255, 0.205) ;
+    padding-bottom: 40px;
+}
+
+
+.transfer-title {
+    text-align: center;
+}
+
+.transfer-head, .match-heading {
+    font-size: 2.5em;
+    color: rgb(221, 61, 33);
+} 
+
+
 
 /* highlights */
 
@@ -123,6 +218,9 @@ header{
 .btn {
     margin-top: 34px;
 }
+
+
+
 /* footer */
  footer{
      margin: 150px 0 63px;
@@ -159,7 +257,64 @@ header{
     border-radius: 20px;
 }
 
+.copyrights {
+    font-size: 18px;
+}
 
+
+/* media queries */
+
+@media only screen and (max-width:688px) {
+    /* common */
+.container{
+    padding-top: 0;
+}
+.half {
+    width: 100%;
+}
+
+.half img {
+    width: 100%;
+    margin-top: 50px;
+}
+/* header section  */
+    .header {
+        padding:10px;
+    }
+    .menu {
+        width: 100%;
+    }
+   
+    .menu-items{
+        display: none;
+    }
+
+    .menu-bars{
+       display: block;
+    }
+    .top-banner, .highlights {
+        flex-direction: column;
+        width: 100%;
+    }
+    .title h1 {
+        font-size: 36px;
+    }
+    
+    /* players  */
+    .players {
+        justify-content: ;
+        width: 100%;
+      margin-top: 47px;
+    }
+
+    .player-cards, .transfer-cards{
+        margin: 0;
+        margin-left: 10%;
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-row-gap: 24px;
+}
+}
 
 
 
