@@ -23,6 +23,31 @@ a {
 }
 
 /* head section */
+
+nav {
+    margin-bottom: 49px;
+}
+.menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between ;
+    width: 1050px;
+    align-items: center;
+}
+
+.menu ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    
+}
+
+.menu ul li {
+    list-style: none;
+    color: white;
+    margin-right: 20px;
+}
+
 header{
     background-color: #2D25A0;
     padding: 49px 31px 114px;
@@ -30,16 +55,12 @@ header{
 .top-banner, .highlights {
     display: flex;
     flex-direction: row;
-    width: 80%;
-    align-items: center;
+    width:1050px;
 }
+
 
 .half{
     width: 50%;
-}
-
-.title{
-    padding-left: 10%;
 }
 
 .title h1{
@@ -116,6 +137,7 @@ header{
 .badge {
     display: flex;
     align-items: center;
+    margin-bottom: 30px;
 }
 
 .badge img {
@@ -124,8 +146,7 @@ header{
 }
 
 .badge h1 {
-    font-size: 3em;
-    font-style: italic;
+    font-size: 2em;
     font-weight: 400;
     font-family: 'Times New Roman', Times, serif;
 }
